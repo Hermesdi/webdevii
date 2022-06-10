@@ -12,38 +12,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
+    <table>
       
         <h3 align="center"> Belajar Aplikasi CRUD Django Dari Database Postgresql</h3>
         <br>
+        
         <form method="POST"> 
             {% csrf_token %}
             <div class="mb-3">
               <label class="form-label">Nama</label>
-              <input type="text" class="form-control" >
+              <input type="text" class="form-control" name="Nama" >
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Alamat</label>
-                <input type="text" class="form-control" >
+                <input type="text" class="form-control" name="Alamat">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="text" class="form-control" >
+                    <input type="text" class="form-control" name="Email" >
                     </div>
-
-            <button type="submit" value='Insert'> Submit
-                
-                
+            <button type="submit" value='Insert'> Submit              
             </button>
-          </form>
-           
+            
+          <center>
+            <a href="{% url 'index' %}"> View </a>
+          </center>
+
+          </div>
+
+            
           </table>
           
+          
+        
+        </form>
   
 
 
-      </div>
+     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
