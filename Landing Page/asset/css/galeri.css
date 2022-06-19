@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #1ea6ec, #2c92fb);
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: aliceblue;
+
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+
+}
+
+.navbar-nav li a {
+    color: aliceblue !important;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.dropdown-menu {
+    background-color: #2c92fb;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+   
+    justify-content: center;
+    line-height: 1.5;
+}
+
+
+
+.container{
+    width:2200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    position:static;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.card{
+    flex: 1 1 21rem;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 20px;
+    align-self: normal;
+    padding: 10px 20px;
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+}
+.card h5{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+.card p{
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 20px;
+}
